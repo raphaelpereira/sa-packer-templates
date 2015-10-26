@@ -32,13 +32,13 @@
       "scripts/debian/virtualbox.sh",
       "scripts/common/vagrant.sh",
       "scripts/common/sshd.sh",
-      "scripts/debian/cleanup.sh",
-      "scripts/common/minimize.sh",
       "scripts/smartaccess/debian-base.sh",
       "scripts/smartaccess/cross.sh",
       "scripts/smartaccess/qt5.sh",
       "scripts/smartaccess/tufao.sh",
-      "scripts/smartaccess/qca.sh"
+      "scripts/smartaccess/qca.sh",
+      "scripts/debian/cleanup.sh",
+      "scripts/common/minimize.sh",
     ]
   }],
   "post-processors": [{
