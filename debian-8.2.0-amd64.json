@@ -38,7 +38,7 @@
       "scripts/smartaccess/tufao.sh",
       "scripts/smartaccess/qca.sh",
       "scripts/debian/cleanup.sh",
-      "scripts/common/minimize.sh",
+      "scripts/common/minimize.sh"
     ]
   }],
   "post-processors": [{
