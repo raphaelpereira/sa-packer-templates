@@ -45,23 +45,24 @@
   "post-processors": [[{
     "type": "vagrant",
     "compression_level": "{{user `compression_level`}}",
+    "vagrantfile_template": "vagrantfile_template"
     "keep_input_artifact": false
   },{
     "type": "atlas",
-    "artifact": "raphaelpereira/smartaccess-v2-dev",
+    "artifact": "rmi/smartaccess-v2-dev",
     "artifact_type": "vagrant.box",
     "metadata": {
       "provider": "virtualbox",
-      "version": "0.0.6",
-      "description": "RMI SmartAccess Development Box"
+      "version": "1.0.0",
+      "description": "RMI SmartAccess v2 Development Box"
     }
   }]],
   "variables": {
     "compression_level": "8",
-    "cpus": "1",
+    "cpus": "2",
     "disk_size": "10000",
     "headless": "false",
-    "memory": "512",
+    "memory": "1024",
     "mirror": "http://cdimage.debian.org/debian-cd"
   }
 }
