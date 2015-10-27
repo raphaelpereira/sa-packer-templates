@@ -15,3 +15,4 @@ sudo cp -arf /tmp/smartaccess-libs/usr/local/lib/arm-linux-gnueabi/lib* /usr/loc
 sudo cp -arf /tmp/smartaccess-libs/usr/local/lib/arm-linux-gnueabi/plugins /usr/local/emdebian-besav1rx-devel/usr/lib/arm-linux-gnueabi/
 cd ~
 rm -rf /tmp/smartaccess-libs
+rm -rf smartaccess-libs.tar.gz
