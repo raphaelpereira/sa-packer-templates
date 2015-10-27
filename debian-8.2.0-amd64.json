@@ -41,10 +41,9 @@
       "scripts/common/minimize.sh"
     ]
   }],
-  "post-processors": [{
+  "post-processors": [[{
     "type": "vagrant",
     "compression_level": "{{user `compression_level`}}",
-    "output": "debian-8.2.0-amd64.box",
     "keep_input_artifact": false
   },{
     "type": "atlas",
@@ -52,10 +51,10 @@
     "artifact_type": "vagrant.box",
     "metadata": {
       "provider": "virtualbox",
-      "version": "0.0.4",
+      "version": "0.0.5",
       "description": "RMI SmartAccess Development Box"
     }
-  }],
+  }]],
   "variables": {
     "compression_level": "8",
     "cpus": "1",
