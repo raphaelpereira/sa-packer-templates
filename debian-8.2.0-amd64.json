@@ -45,7 +45,7 @@
   "post-processors": [[{
     "type": "vagrant",
     "compression_level": "{{user `compression_level`}}",
-    "vagrantfile_template": "vagrantfile_template"
+    "vagrantfile_template": "vagrantfile_template",
     "keep_input_artifact": false
   },{
     "type": "atlas",
@@ -53,7 +53,7 @@
     "artifact_type": "vagrant.box",
     "metadata": {
       "provider": "virtualbox",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "description": "RMI SmartAccess v2 Development Box"
     }
   }]],
