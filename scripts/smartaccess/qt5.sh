@@ -5,7 +5,7 @@ set -x
 
 sudo apt-get install -y build-essential doxygen ssh-askpass ssh-askpass-gnome git gitk git-gui pkg-config libssl-dev \
                         libgps-dev gpsd gdb gdbserver qt5-default cmake qt5-qmake qt5-doc qmlscene qtcreator qtcreator-doc \
-                        libqt5serialport5-dev
+                        libqt5serialport5-dev qtpositioning5-dev
 
 cd /usr/local/smartaccess
 sudo chroot besav2rx-dev-filesystem/ apt-get update
@@ -54,3 +54,14 @@ make
 sudo make install
 cd ..
 sudo rm -rf qtbase
+
+tee -a <<EOF >qtcreator_no_opengl
+#!/bin/sh
+qtcreator -noload Welcome -noload QmlDesigner -noload QmlProfiler
+EOF
+sudo mv qtcreator_no_opengl /usr/local/bin
+sudo chmod a+x /usr/local/bin/qtcreator_no_opengl
+
+curl -O http://www.rmi.inf.br/downloads/vagrant-qtcreator-config.tar.gz
+tar xzf vagrant-qtcreator-config.tar.gz
+rm -f vagrant-qtcreator-config.tar.gz
