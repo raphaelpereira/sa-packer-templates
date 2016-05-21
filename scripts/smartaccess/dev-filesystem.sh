@@ -11,5 +11,6 @@ sudo cp /usr/bin/qemu-arm-static besav2rx-dev-filesystem/usr/bin/
 sudo cp /etc/resolv.conf besav2rx-dev-filesystem/etc/
 sudo chroot besav2rx-dev-filesystem/ /debootstrap/debootstrap --second-stage
 sudo chroot besav2rx-dev-filesystem/ apt-get update
+sudo chroot besav2rx-dev-filesystem/ apt-get install libmosquittopp-dev
 sudo chroot besav2rx-dev-filesystem/ apt-get clean
 cd ~
