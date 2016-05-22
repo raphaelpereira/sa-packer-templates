@@ -3,7 +3,7 @@
 set -e
 set -x
 
-sudo apt-get install -y libpq-dev:armel libmysqlclient-dev:armel debhelper autotools-dev libsqlite3-dev:armel
+sudo apt-get install -y libpq-dev:armel libmysqlclient-dev:armel debhelper autotools-dev libsqlite3-dev:armel automake
 
 git clone git://git.code.sf.net/p/litesql/litesql litesql
 
@@ -21,5 +21,5 @@ dpkg -i ../liblitesql*armel.deb
 cd ..
 rm -rf liblitesql*
 rm -rf litesql
-sudo apt-get remove -y libpq-dev:armel libmysqlclient-dev:armel debhelper autotools-dev libsqlite3-dev:armel
+sudo apt-get remove -y libpq-dev:armel libmysqlclient-dev:armel debhelper autotools-dev libsqlite3-dev:armel automake
 sudo apt-get autoremove -y
