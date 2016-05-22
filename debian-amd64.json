@@ -35,13 +35,13 @@
       "scripts/smartaccess/debian-base.sh",
       "scripts/smartaccess/cross.sh",
       "scripts/smartaccess/dev-filesystem.sh",
+      "scripts/smartaccess/litesql.sh",
       "scripts/smartaccess/qt5.sh",
       "scripts/smartaccess/qtserialport.sh",
       "scripts/smartaccess/qtlocation.sh",
       "scripts/smartaccess/qtmultimedia.sh",
       "scripts/smartaccess/tufao.sh",
       "scripts/smartaccess/qca.sh",
-      "scripts/smartaccess/litesql.sh",
       "scripts/debian/cleanup.sh",
       "scripts/common/minimize.sh"
     ]
@@ -57,7 +57,7 @@
     "artifact_type": "vagrant.box",
     "metadata": {
       "provider": "virtualbox",
-      "version": "1.3.7",
+      "version": "1.3.8",
       "description": "RMI SmartAccess v2 Development Box"
     }
   }]],
