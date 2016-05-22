@@ -41,6 +41,7 @@
       "scripts/smartaccess/qtmultimedia.sh",
       "scripts/smartaccess/tufao.sh",
       "scripts/smartaccess/qca.sh",
+      "scripts/smartaccess/litesql.sh",
       "scripts/debian/cleanup.sh",
       "scripts/common/minimize.sh"
     ]
@@ -56,7 +57,7 @@
     "artifact_type": "vagrant.box",
     "metadata": {
       "provider": "virtualbox",
-      "version": "1.3.4",
+      "version": "1.3.5",
       "description": "RMI SmartAccess v2 Development Box"
     }
   }]],
