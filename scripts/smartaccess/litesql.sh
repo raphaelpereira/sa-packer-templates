@@ -15,7 +15,7 @@ cat configure.ac |sed -se 's/AC_FUNC_REALLOC/#AC_FUNC_REALLOC/g' >configure.ac.n
 
 # armel
 dpkg-buildpackage -a armel -us -uc
-dpkg -i ../liblitesql*armel.deb
+sudo dpkg -i ../liblitesql*armel.deb
 
 # clean
 cd ..

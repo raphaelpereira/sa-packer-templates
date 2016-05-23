@@ -5,7 +5,7 @@ set -x
 
 sudo mkdir /usr/local/smartaccess
 cd /usr/local/smartaccess
-sudo apt-get install -y debootstrap qemu-user-static binfmt-support libsystemd0:armel libsystemd-journal-dev libssl-dev:armel
+sudo apt-get install -y debootstrap qemu-user-static binfmt-support libsystemd0:armel libsystemd-journal-dev libssl-dev:armel libmosquittopp-dev
 sudo debootstrap --foreign --arch=armel jessie besav2rx-dev-filesystem
 sudo cp /usr/bin/qemu-arm-static besav2rx-dev-filesystem/usr/bin/
 sudo cp /etc/resolv.conf besav2rx-dev-filesystem/etc/
