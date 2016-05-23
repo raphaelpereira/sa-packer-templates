@@ -3,7 +3,7 @@
 set -e
 set -x
 
-sudo apt-get install -y libpq-dev:armel libmysqlclient-dev:armel debhelper autotools-dev libsqlite3-dev:armel automake libexpat1-dev
+sudo apt-get install -y libpq-dev:armel libmysqlclient-dev:armel debhelper autotools-dev libsqlite3-dev:armel automake libexpat1-dev:armel
 
 git clone git://git.code.sf.net/p/litesql/litesql litesql
 
