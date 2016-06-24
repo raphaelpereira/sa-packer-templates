@@ -37,6 +37,8 @@
       "scripts/smartaccess/dev-filesystem.sh",
       "scripts/smartaccess/qt5.sh",
       "scripts/smartaccess/litesql.sh",
+      "scripts/smartaccess/boost.sh",
+      "scripts/smartaccess/pcsc.sh",
       "scripts/smartaccess/qtserialport.sh",
       "scripts/smartaccess/qtlocation.sh",
       "scripts/smartaccess/qtmultimedia.sh",
@@ -57,7 +59,7 @@
     "artifact_type": "vagrant.box",
     "metadata": {
       "provider": "virtualbox",
-      "version": "1.3.11",
+      "version": "1.3.12",
       "description": "RMI SmartAccess v2 Development Box"
     }
   }]],
