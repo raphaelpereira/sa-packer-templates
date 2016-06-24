@@ -3,7 +3,7 @@
     "type": "virtualbox-iso",
     "guest_os_type": "Debian_64",
     "iso_url": "{{user `mirror`}}/8.5.0/amd64/iso-cd/debian-8.5.0-amd64-netinst.iso",
-    "iso_checksum": "7a6b418e6a4ee3ca75dda04d79ed96c9e2c33bb0c703ca7e40c6374ab4590748",
+    "iso_checksum": "ad4e8c27c561ad8248d5ebc1d36eb172f884057bfeb2c22ead823f59fa8c3dff",
     "iso_checksum_type": "sha256",
     "output_directory": "output-debian-8.5.0-amd64",
     "vm_name": "packer-debian-8.5.0-amd64",
@@ -59,7 +59,7 @@
     "artifact_type": "vagrant.box",
     "metadata": {
       "provider": "virtualbox",
-      "version": "1.3.14",
+      "version": "1.3.15",
       "description": "RMI SmartAccess v2 Development Box"
     }
   }]],
