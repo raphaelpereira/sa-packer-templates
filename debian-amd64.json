@@ -59,7 +59,7 @@
     "artifact_type": "vagrant.box",
     "metadata": {
       "provider": "virtualbox",
-      "version": "1.3.12",
+      "version": "1.3.13",
       "description": "RMI SmartAccess v2 Development Box"
     }
   }]],
