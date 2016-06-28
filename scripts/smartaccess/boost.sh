@@ -22,5 +22,5 @@ sudo ./b2 clean
 sudo rm -f /etc/site-config.jam
 sudo ./b2 toolset=gcc install || true
 cd ~
-rm -rf boost*
+sudo rm -rf boost*
 

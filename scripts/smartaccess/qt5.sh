@@ -20,8 +20,8 @@ cd ~
 git clone https://github.com/qtproject/qtbase.git --branch 5.3.2 --single-branch --depth 1
 cd qtbase
 #curl -O http://www.rmi.inf.br/downloads/linux-imx23-besav2rx.tar.gz
-tar xzf /tmp/linux-imx23-besav2rx.tar.gz
-rm linux-imx23-besav2rx.tar.gz
+tar xzf /home/vagrant/linux-imx23-besav2rx.tar.gz
+rm -f /home/vagrant/linux-imx23-besav2rx.tar.gz
 ./configure -verbose -prefix /usr/local/smartaccess/qt5 \
     -release \
     -opensource -confirm-license \
@@ -63,5 +63,5 @@ sudo mv qtcreator_no_opengl /usr/local/bin
 sudo chmod a+x /usr/local/bin/qtcreator_no_opengl
 
 #curl -O http://www.rmi.inf.br/downloads/vagrant-qtcreator-config.tar.gz
-tar xzf /tmp/vagrant-qtcreator-config.tar.gz
-rm -f vagrant-qtcreator-config.tar.gz
+tar xzf /home/vagrant/vagrant-qtcreator-config.tar.gz
+rm -f /home/vagrant/vagrant-qtcreator-config.tar.gz
