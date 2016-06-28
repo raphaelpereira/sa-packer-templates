@@ -5,7 +5,7 @@ set -x
 
 sudo apt-get install -y build-essential doxygen ssh-askpass ssh-askpass-gnome git gitk git-gui pkg-config libssl-dev \
                         libgps-dev gpsd gdb gdbserver qt5-default cmake qt5-qmake qt5-doc qmlscene qtcreator qtcreator-doc \
-                        libqt5serialport5-dev qtpositioning5-dev
+                        libqt5serialport5-dev qtpositioning5-dev libqt5webkit5-dev
 
 cd /usr/local/smartaccess
 sudo chroot besav2rx-dev-filesystem/ apt-get update
@@ -19,8 +19,8 @@ sudo chroot besav2rx-dev-filesystem/ apt-get clean
 cd ~
 git clone https://github.com/qtproject/qtbase.git --branch 5.3.2 --single-branch --depth 1
 cd qtbase
-curl -O http://www.rmi.inf.br/downloads/linux-imx23-besav2rx.tar.gz
-tar xzf linux-imx23-besav2rx.tar.gz
+#curl -O http://www.rmi.inf.br/downloads/linux-imx23-besav2rx.tar.gz
+tar xzf /tmp/linux-imx23-besav2rx.tar.gz
 rm linux-imx23-besav2rx.tar.gz
 ./configure -verbose -prefix /usr/local/smartaccess/qt5 \
     -release \
@@ -62,6 +62,6 @@ EOF
 sudo mv qtcreator_no_opengl /usr/local/bin
 sudo chmod a+x /usr/local/bin/qtcreator_no_opengl
 
-curl -O http://www.rmi.inf.br/downloads/vagrant-qtcreator-config.tar.gz
-tar xzf vagrant-qtcreator-config.tar.gz
+#curl -O http://www.rmi.inf.br/downloads/vagrant-qtcreator-config.tar.gz
+tar xzf /tmp/vagrant-qtcreator-config.tar.gz
 rm -f vagrant-qtcreator-config.tar.gz

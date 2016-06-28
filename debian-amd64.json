@@ -27,6 +27,14 @@
     ]
   }],
   "provisioners": [{
+    "type": "file",
+    "source": "http/debian/linux-imx23-besav2rx.tar.gz",
+    "destination": "/tmp/linux-imx23-besav2rx.tar.gz"
+  },{
+    "type": "file",
+    "source": "http/debian/vagrant-qtcreator-config.tar.gz",
+    "destination": "/tmp/vagrant-qtcreator-config.tar.gz"
+  },{
     "type": "shell",
     "scripts": [
       "scripts/debian/virtualbox.sh",
@@ -59,7 +67,7 @@
     "artifact_type": "vagrant.box",
     "metadata": {
       "provider": "virtualbox",
-      "version": "1.3.16",
+      "version": "1.3.17",
       "description": "RMI SmartAccess v2 Development Box"
     }
   }]],

@@ -19,7 +19,6 @@ sudo dpkg -i ../liblitesql*armel.deb
 
 # clean
 cd ..
-rm -rf liblitesql*
-rm -rf litesql
+rm -rf *litesql*
 sudo apt-get remove -y libpq-dev:armel libmysqlclient-dev:armel debhelper autotools-dev libsqlite3-dev:armel automake libexpat1-dev
 sudo apt-get autoremove -y
